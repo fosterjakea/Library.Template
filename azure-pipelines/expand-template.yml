@@ -5,8 +5,8 @@ steps:
   displayName: Cleaning repo for template expansion
 - powershell: |
     git config user.name "test user"
-    git config user.email "andrewarnott@gmail.com"
-    ./Expand-Template.ps1 -LibraryName Calc -Author "Andrew Arnott"
+    git config user.email "fosterjakea@outlook.com"
+    ./Expand-Template.ps1 -LibraryName Calc -Author "Jake Foster"
   displayName: Expanding template
   failOnStderr: true
 # TODO: Verify that all changes are staged to the git index

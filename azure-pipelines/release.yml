@@ -28,7 +28,7 @@ stages:
           - task: GitHubRelease@1
             displayName: GitHub release (create)
             inputs:
-              gitHubConnection: # TODO: fill in service connection here
+              gitHubConnection: github.com_fosterjakea_OAuth # TODO: fill in service connection here
               repositoryName: $(Build.Repository.Name)
               target: $(resources.pipeline.CI.sourceCommit)
               tagSource: userSpecifiedTag
@@ -43,30 +43,30 @@ stages:
                   { "label" : "enhancement", "displayName": "Enhancements", "state" : "closed" }
                 ]
 
-- stage: nuget_org
-  displayName: nuget.org
-  dependsOn: GitHubRelease
-  jobs:
-  - deployment: push
-    pool:
-      vmImage: ubuntu-latest
-    environment: No-Approval
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - download: CI
-            artifact: deployables-Windows
-            displayName: Download deployables-Windows artifact
-            patterns: 'deployables-Windows/*'
-          - task: NuGetToolInstaller@1
-            displayName: Use NuGet 5.x
-            inputs:
-              versionSpec: 5.x
-          - task: NuGetCommand@2
-            displayName: NuGet push
-            inputs:
-              command: push
-              packagesToPush: $(Pipeline.Workspace)/CI/deployables-Windows/*.nupkg
-              nuGetFeedType: external
-              publishFeedCredentials: # TODO: fill in service connection here
+# - stage: nuget_org
+#   displayName: nuget.org
+#   dependsOn: GitHubRelease
+#   jobs:
+#   - deployment: push
+#     pool:
+#       vmImage: ubuntu-latest
+#     environment: No-Approval
+#     strategy:
+#       runOnce:
+#         deploy:
+#           steps:
+#           - download: CI
+#             artifact: deployables-Windows
+#             displayName: Download deployables-Windows artifact
+#             patterns: 'deployables-Windows/*'
+#           - task: NuGetToolInstaller@1
+#             displayName: Use NuGet 5.x
+#             inputs:
+#               versionSpec: 5.x
+#           - task: NuGetCommand@2
+#             displayName: NuGet push
+#             inputs:
+#               command: push
+#               packagesToPush: $(Pipeline.Workspace)/CI/deployables-Windows/*.nupkg
+#               nuGetFeedType: external
+#               publishFeedCredentials: # TODO: fill in service connection here
