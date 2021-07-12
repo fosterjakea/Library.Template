@@ -1,5 +1,6 @@
-﻿// Copyright (c) COMPANY-PLACEHOLDER. All rights reserved.
-// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+﻿// Copyright (c) {companyName}.  All rights reserved.
+// Licensed under the {licenseName} license.  See {licenseFile} file in the project root for
+// full license information.
 
 using Library;
 using Xunit;
