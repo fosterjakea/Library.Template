@@ -3,7 +3,7 @@
   "settings": {
     "documentationRules": {
       "companyName": "COMPANY-PLACEHOLDER",
-      "copyrightText": "Copyright (c) {companyName}. All rights reserved.\nLicensed under the {licenseName} license. See {licenseFile} file in the project root for full license information.",
+      "copyrightText": "Copyright (c) {companyName}.  All rights reserved.\nLicensed under the {licenseName} license.  See {licenseFile} file in the project root for\nfull license information.",
       "fileNamingConvention": "metadata",
       "variables": {
         "licenseName": "MIT",
