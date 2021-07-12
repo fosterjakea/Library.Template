@@ -7,7 +7,7 @@
       "fileNamingConvention": "metadata",
       "variables": {
         "licenseName": "MIT",
-        "licenseFile": "LICENSE"
+        "licenseFile": "LICENSE.md"
       },
       "xmlHeader": false
     }
