@@ -1,6 +1,6 @@
-# EditorConfig is awesome:http://EditorConfig.org
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
 
-# top-most EditorConfig file
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
 root = true
 
 # Don't use tabs for indentation.
@@ -128,10 +128,10 @@ csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 
-# Prefer "var" everywhere
-csharp_style_var_for_built_in_types = true:suggestion
-csharp_style_var_when_type_is_apparent = true:suggestion
-csharp_style_var_elsewhere = false:warning
+# Avoid "var"
+csharp_style_var_for_built_in_types = false:silent
+csharp_style_var_when_type_is_apparent = false:silent
+csharp_style_var_elsewhere = false:silent
 
 # Prefer method-like constructs to have a block body
 csharp_style_expression_bodied_methods = false:none
@@ -169,3 +169,9 @@ dotnet_diagnostic.CA1508.severity = warning
 
 [*.sln]
 indent_style = tab
+
+# Editor Guidelines.  Download VS Extension from:
+# https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines
+[*.{cs,vb}]
+guidelines = 80
+guidelines_style = 0.5px solid gray

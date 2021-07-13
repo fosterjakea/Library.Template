@@ -3,7 +3,15 @@
 
 version: 2
 updates:
-- package-ecosystem: nuget
-  directory: /
-  schedule:
-    interval: monthly
+  - package-ecosystem: nuget
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: friday
+      time: "19:30"
+      timezone: Australia/Brisbane
+    open-pull-requests-limit: 99
+    reviewers:
+      - fosterjakea
+    assignees:
+      - fosterjakea

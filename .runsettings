@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Puts test results in 'test' directory rather than root. -->
+  <!-- Make sure to select file by Test -> Configure Run Settings -> Selection Solution Wide runsettings File -->
+  <RunConfiguration>
+    <ResultsDirectory>test\results</ResultsDirectory>
+  </RunConfiguration>
+</RunSettings>

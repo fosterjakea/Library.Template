@@ -4,9 +4,9 @@
 
 ![NuGet package](https://img.shields.io/badge/nuget-your--package--here-yellow.svg)
 
-[![Azure Pipelines status](https://dev.azure.com/andrewarnott/OSS/_apis/build/status/AArnott.Library.Template?branchName=main)](https://dev.azure.com/andrewarnott/OSS/_build/latest?definitionId=29&branchName=main)
+[![Azure Pipelines status](https://dev.azure.com/andrewarnott/OSS/_apis/build/status/AArnott.Library.Template?branchName=master)](https://dev.azure.com/andrewarnott/OSS/_build/latest?definitionId=29&branchName=master)
 ![GitHub Actions status](https://github.com/aarnott/Library.Template/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/aarnott/library.template/branch/main/graph/badge.svg)](https://codecov.io/gh/aarnott/library.template)
+[![codecov](https://codecov.io/gh/aarnott/library.template/branch/master/graph/badge.svg)](https://codecov.io/gh/aarnott/library.template)
 
 ## Features
 
@@ -34,5 +34,5 @@ Once you've expanded this template for your own use, you should **run the `Expan
 
 Further customize your repo by:
 
-1. Verify the license is suitable for your goal as it appears in the LICENSE and stylecop.json files and the Directory.Build.props file's `PackageLicenseExpression` property.
+1. Verify the license is suitable for your goal as it appears in the LICENSE.md and stylecop.json files and the Directory.Build.props file's `PackageLicenseExpression` property.
 1. Reset or replace the badges at the top of this file.
