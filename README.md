@@ -2,8 +2,8 @@
 
 ***An awesome template for your awesome library***
 
-[![Build Status](https://dev.azure.com/fosterjakea/fosterjakea/_apis/build/status/fosterjakea.Library.Template?branchName=master)](https://dev.azure.com/fosterjakea/fosterjakea/_build/latest?definitionId=2&branchName=master)
-[![CI](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml)
+[![Azure Pipelines status](https://dev.azure.com/fosterjakea/fosterjakea/_apis/build/status/fosterjakea.Library.Template?branchName=master)](https://dev.azure.com/fosterjakea/fosterjakea/_build/latest?definitionId=2&branchName=master)
+[![GitHub Actions status](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/fosterjakea/Library.Template/branch/master/graph/badge.svg?token=KMXAJ5MEVS)](https://codecov.io/gh/fosterjakea/Library.Template)
 
 ## Features
