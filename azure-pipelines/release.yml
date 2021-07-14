@@ -4,7 +4,7 @@ pr: none
 resources:
   pipelines:
   - pipeline: CI
-    source: Library # TODO: This should match the name of your CI pipeline
+    source: fosterjakea.Library.Template # TODO: This should match the name of your CI pipeline
     trigger:
       tags:
       - auto-release
@@ -28,7 +28,7 @@ stages:
           - task: GitHubRelease@1
             displayName: GitHub release (create)
             inputs:
-              gitHubConnection: github.com_fosterjakea_OAuth # TODO: fill in service connection here
+              gitHubConnection: 'github connection 1' # TODO: fill in service connection here
               repositoryName: $(Build.Repository.Name)
               target: $(resources.pipeline.CI.sourceCommit)
               tagSource: userSpecifiedTag
