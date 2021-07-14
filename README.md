@@ -2,11 +2,9 @@
 
 ***An awesome template for your awesome library***
 
-![NuGet package](https://img.shields.io/badge/nuget-your--package--here-yellow.svg)
-
-[![Azure Pipelines status](https://dev.azure.com/andrewarnott/OSS/_apis/build/status/AArnott.Library.Template?branchName=master)](https://dev.azure.com/andrewarnott/OSS/_build/latest?definitionId=29&branchName=master)
-![GitHub Actions status](https://github.com/aarnott/Library.Template/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/aarnott/library.template/branch/master/graph/badge.svg)](https://codecov.io/gh/aarnott/library.template)
+[![Build Status](https://dev.azure.com/fosterjakea/fosterjakea/_apis/build/status/fosterjakea.Library.Template?branchName=master)](https://dev.azure.com/fosterjakea/fosterjakea/_build/latest?definitionId=2&branchName=master)
+[![CI](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/fosterjakea/Library.Template/branch/master/graph/badge.svg?token=KMXAJ5MEVS)](https://codecov.io/gh/fosterjakea/Library.Template)
 
 ## Features
 
