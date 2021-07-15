@@ -1,16 +1,13 @@
 # Contributing
 
-This project has adopted the [Microsoft Open Source Code of
-Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct
-FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com)
-with any additional questions or comments.
-
 ## Best practices
 
 * Use Windows PowerShell or [PowerShell Core][pwsh] (including on Linux/OSX) to run .ps1 scripts.
   Some scripts set environment variables to help you, but they are only retained if you use PowerShell as your shell.
+* Use a margin to keep code within 80 characters - With Visual Studio you can
+  use [Editor Guidelines](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)
+  or with Visual Studio Code there is a [setting](https://stackoverflow.com/questions/29968499/vertical-rulers-in-visual-studio-code)
+  you can take advantage of.
 
 ## Prerequisites
 
