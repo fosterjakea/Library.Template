@@ -2,9 +2,10 @@
 
 ***An awesome template for your awesome library***
 
-[![Azure Pipelines status](https://dev.azure.com/fosterjakea/library-template/_apis/build/status/fosterjakea.Library.Template?branchName=master)](https://dev.azure.com/fosterjakea/library-template/_build/latest?definitionId=8&branchName=master)
+[![Build Status](https://dev.azure.com/fosterjakea/oss/_apis/build/status/fosterjakea.Library.Template?branchName=master)](https://dev.azure.com/fosterjakea/oss/_build/latest?definitionId=14&branchName=master)
 [![GitHub Actions status](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/fosterjakea/Library.Template/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/fosterjakea/Library.Template/branch/master/graph/badge.svg?token=KMXAJ5MEVS)](https://codecov.io/gh/fosterjakea/Library.Template)
+[![license](https://img.shields.io/github/license/fosterjakea/Library.Template)](https://github.com/fosterjakea/Library.Template/blob/master/LICENSE.md)
 
 ## Features
 
