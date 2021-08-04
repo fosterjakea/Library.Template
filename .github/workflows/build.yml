@@ -11,7 +11,6 @@ env:
   TreatWarningsAsErrors: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
   BUILDCONFIGURATION: Release
-  codecov_token: c760103c-9502-470e-a9de-131f06d4dc5c # Get a new one from https://codecov.io/
   NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
 
 jobs:
@@ -99,8 +98,3 @@ jobs:
         name: deployables
         path: obj/_artifacts/deployables
       if: always() && runner.os == 'Windows'
-    - name: Publish code coverage results to codecov.io
-      run: bash <(curl -s https://codecov.io/bash)
-      shell: bash
-      timeout-minutes: 3
-      continue-on-error: true

@@ -65,9 +65,3 @@ steps:
     SymbolServerType: TeamServices
   displayName: Publish test symbols to symbol server
   condition: and(failed(), eq(variables['Agent.OS'], 'Windows_NT')) # Execute on failed test runs only.
-
-- bash: bash <(curl -s https://codecov.io/bash)
-  displayName: Publish code coverage results to codecov.io
-  condition: ne(variables['codecov_token'], '')
-  timeoutInMinutes: 3
-  continueOnError: true
