@@ -9,5 +9,5 @@
     "^refs/heads/master$",
     "^refs/heads/v\\d+(?:\\.\\d+)?$"
   ],
-  "version": "0.0.1-beta"
+  "version": "0.0.1-alpha"
 }
