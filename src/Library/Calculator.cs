@@ -1,6 +1,5 @@
-﻿// Copyright (c) COMPANY-PLACEHOLDER.  All rights reserved.
-// Licensed under the MIT license.  See LICENSE.md file in the project root for
-// full license information.
+﻿// Copyright (c) COMPANY-PLACEHOLDER. All rights reserved. Licensed under the MIT
+// license. See LICENSE.md in the project root for full license information.
 
 namespace Library
 {
