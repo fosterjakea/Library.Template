@@ -173,7 +173,7 @@ dotnet_diagnostic.IDE1006.severity = none
 [*.sln]
 indent_style = tab
 
-# Editor Guidelines.  Download VS Extension from:
+# Editor Guidelines. Download VS Extension from:
 # https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines
 [*.{cs,vb}]
 guidelines = 80
