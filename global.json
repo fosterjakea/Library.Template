@@ -1,7 +1,7 @@
 {
   "sdk": {
     "version": "5.0.400",
-    "rollForward": "patch",
+    "rollForward": "disable",
     "allowPrerelease": false
   }
 }
