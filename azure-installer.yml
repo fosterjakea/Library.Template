@@ -1,0 +1,65 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+    - 'validate/*'
+  paths:
+    exclude:
+    - doc/
+    - '*.md'
+    - .vscode/
+    - .github/
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- powershell: .\init.ps1
+  displayName: Install prerequisites
+
+# Publish for self-contained app, not build.
+- script: dotnet publish -r win-x64 --configuration Release
+  displayName: dotnet publish
+
+- script: dotnet test
+  displayName: dotnet test
+
+# Install Inno Setup with chocolatey
+- task: PowerShell@2
+  displayName: 'Inno setup download'
+  inputs:
+    targetType: 'inline'
+    script: 'choco install innosetup'
+
+# Execute install script
+- task: PowerShell@2
+  displayName: 'Execute Inno Setup script'
+  inputs:
+    targetType: 'inline'
+    script: 'iscc.exe azure-installer\\install.iss'
+
+# Copy setup into ArtifactStaging folder
+- task: CopyFiles@2
+  displayName: 'Copy setup to artifact'
+  inputs:
+    SourceFolder: 'bin\\OfficeToPdf.CLI.Installer'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+# Publish artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

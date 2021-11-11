@@ -35,3 +35,22 @@ Further customize your repo by:
 
 1. Verify the license is suitable for your goal as it appears in the LICENSE.md and stylecop.json files and the Directory.Build.props file's `PackageLicenseExpression` property.
 1. Reset or replace the badges at the top of this file.
+
+# README template for future projects
+Use headings as required.
+
+## Overview
+
+## Purpose
+
+## Installation
+
+## Usage
+
+## Limitations
+
+## Building
+
+## Disclaimers
+
+## Code of Conduct
