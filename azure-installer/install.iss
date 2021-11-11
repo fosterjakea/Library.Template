@@ -7,7 +7,7 @@
 #define MyAppName "Library Template"
 #define MyAppPublisher "Jake Foster"
 #define MyAppURL "https://github.com/fosterjakea/Library.Template"
-#define MyBinFolder "..\bin\OfficeToPdf.CLI\Release\net5.0\win-x64\"
+#define MyBinFolder "..\bin\Library.Template\Release\net5.0\win-x64\"
 #define MyAppExeName "Library.Template.exe"
 #define MyAppVersion GetVersionNumbersString(MyBinFolder + MyAppExeName)
 
