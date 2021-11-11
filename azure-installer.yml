@@ -53,7 +53,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy setup to artifact'
   inputs:
-    SourceFolder: 'bin\\OfficeToPdf.CLI.Installer'
+    SourceFolder: 'bin\\Library.Template.Installer'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
