@@ -28,15 +28,12 @@ steps:
 - powershell: .\init.ps1
   displayName: Install prerequisites
 
-# We are publishing for a self-contained app, not building.
-#- script: dotnet build --configuration Release
-#  displayName: dotnet build
-
+# Publish for self-contained app, not build.
 - script: dotnet publish -r win-x64 --configuration Release
   displayName: dotnet publish
 
-#- script: dotnet test
-#  displayName: dotnet test
+- script: dotnet test
+  displayName: dotnet test
 
 # Install Inno Setup with chocolatey
 - task: PowerShell@2
