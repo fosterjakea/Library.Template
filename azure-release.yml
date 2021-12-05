@@ -29,7 +29,7 @@ steps:
   displayName: Install prerequisites
 
 # Publish for self-contained app, not build.
-- script: dotnet publish -r win-x64 --configuration Release
+- script: dotnet publish -r win-x64 -f net6.0-windows -c Release --self-contained true
   displayName: dotnet publish
 
 - script: dotnet test
