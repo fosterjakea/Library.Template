@@ -145,7 +145,7 @@ try {
         'Library'=$LibraryName
         'COMPANY-PLACEHOLDER'=$Author
     }
-    Replace-Placeholders -Path "LICENSE" -Replacements @{
+    Replace-Placeholders -Path "LICENSE.md" -Replacements @{
         'COMPANY-PLACEHOLDER'=$Author
     }
     Replace-Placeholders -Path "stylecop.json" -Replacements @{
@@ -155,7 +155,7 @@ try {
         'COMPANY-PLACEHOLDER'=$Author
     }
     Replace-Placeholders -Path "README.md" -Replacements @{
-        "(?m)^.*\[NuGet package\][^`r`n]*"="[![NuGet package](https://img.shields.io/nuget/v/$LibraryName.svg)](https://nuget.org/packages/$LibraryName)"
+        #"(?m)^.*\[NuGet package\][^`r`n]*"="[![NuGet package](https://img.shields.io/nuget/v/$LibraryName.svg)](https://nuget.org/packages/$LibraryName)"
         "(?m)^.*\[Azure Pipelines status\].*`r?`n"=""
         "(?m)^.*\[GitHub Actions status\].*`r?`n"=""
         "(?m)^.*\[codecov\].*`r?`n"=""
@@ -211,4 +211,4 @@ try {
 }
 
 # When testing this script, all the changes can be quickly reverted with this command:
-# git reset HEAD :/README.md :/LICENSE :/azure-pipelines.yml :/src :/test :/azure-pipelines; git co -- :/README.md :/LICENSE :/azure-pipelines.yml :/src :/azure-pipelines; git clean -fd :/src :/test
+# git reset HEAD :/README.md :/LICENSE.md :/azure-pipelines.yml :/src :/test :/azure-pipelines; git co -- :/README.md :/LICENSE.md :/azure-pipelines.yml :/src :/azure-pipelines; git clean -fd :/src :/test

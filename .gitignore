@@ -346,3 +346,6 @@ MigrationBackup/
 
 # dotnet tool local install directory
 .store/
+
+# Executables
+*.exe

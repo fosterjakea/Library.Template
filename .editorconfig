@@ -1,6 +1,6 @@
-# EditorConfig is awesome:http://EditorConfig.org
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
 
-# top-most EditorConfig file
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
 root = true
 
 # Don't use tabs for indentation.
@@ -81,7 +81,7 @@ dotnet_naming_rule.static_fields_should_be_camel_case.style = static_field_style
 dotnet_naming_symbols.static_fields.applicable_kinds = field
 dotnet_naming_symbols.static_fields.required_modifiers = static
 
-dotnet_naming_style.static_field_style.capitalization = camel_case
+dotnet_naming_style.static_field_style.capitalization = pascal_case
 
 # Instance fields are camelCase
 dotnet_naming_rule.instance_fields_should_be_camel_case.severity = suggestion
@@ -128,10 +128,10 @@ csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 
-# Prefer "var" everywhere
-csharp_style_var_for_built_in_types = false
-csharp_style_var_when_type_is_apparent = true:suggestion
-csharp_style_var_elsewhere = false:warning
+# Avoid "var"
+csharp_style_var_for_built_in_types = false:silent
+csharp_style_var_when_type_is_apparent = false:silent
+csharp_style_var_elsewhere = false:silent
 
 # Prefer method-like constructs to have a block body
 csharp_style_expression_bodied_methods = false:none
@@ -148,7 +148,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
 csharp_style_throw_expression = true:suggestion
-csharp_style_conditional_delegate_call = true:suggestion
+csharp_style_conditional_delegate_call = false:error
 
 # Newline settings
 csharp_new_line_before_open_brace = all

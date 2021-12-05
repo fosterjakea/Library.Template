@@ -57,4 +57,4 @@ jobs:
   - template: publish-codecoverage.yml
     parameters:
       includeMacOS: ${{ parameters.includeMacOS }}
-  - template: publish-deployables.yml
+  #- template: publish-deployables.yml
