@@ -23,7 +23,7 @@ steps:
   condition: succeededOrFailed()
 
 - task: DotNetCoreCLI@2
-  displayName: dotnet test
+  displayName: dotnet test -f net5.0
   inputs:
     command: test
     arguments: --no-build -c $(BuildConfiguration) -f net5.0 --filter "TestCategory!=FailsInCloudTest" -v n /p:CollectCoverage=true --settings "$(Build.Repository.LocalPath)/azure-pipelines/$(Agent.OS).runsettings" /bl:"$(Build.ArtifactStagingDirectory)/build_logs/test_net5.0.binlog" --diag "$(Build.ArtifactStagingDirectory)/test_logs/net5.0.txt"
