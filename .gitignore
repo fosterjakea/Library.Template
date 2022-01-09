@@ -349,3 +349,6 @@ MigrationBackup/
 
 # Executables
 *.exe
+
+# Notepad++ backup files
+*.bak
